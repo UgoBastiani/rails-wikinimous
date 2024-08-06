@@ -1,0 +1,9 @@
+<h1>Modify this article</h1>
+
+<%= form_with model: @article, local: true do |element| %>
+  <%= element.label :title %>
+  <%= element.text_field :title %>
+  <%= element.label :content %>
+  <%= element.text_field :content %>
+  <%= element.submit%>
+<% end %>
